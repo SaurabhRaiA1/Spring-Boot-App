@@ -30,4 +30,4 @@ jobs:
     - name: Tag and Push Docker image
       run: |
         docker tag ecommerce-app:latest ${{ secrets.DOCKERHUB_USERNAME }}/ecommerce-app:latest
-        docker push ${{ secrets.DOCKERHUB_USERNAME }}/ecommerce-app:latest:latest
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/ecommerce-app:latest
