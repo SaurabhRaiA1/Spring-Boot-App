@@ -15,7 +15,7 @@ services:
       retries: 10
 
   springboot-app:
-    image: saurabhraia1/ecommerce-app
+    image: ecommerce-app
     restart: on-failure
     build: .
     ports:
