@@ -27,7 +27,7 @@ jobs:
     - name: Build Docker image
       run: docker-compose build
 
-    - name: Push Docker image
+    - name: Tag and Push Docker image
       run: |
         docker tag my-spring-boot-app:latest ${{ secrets.DOCKER_USERNAME }}/my-spring-boot-app:latest
         docker push ${{ secrets.DOCKER_USERNAME }}/my-spring-boot-app:latest
