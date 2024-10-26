@@ -30,4 +30,4 @@ jobs:
     - name: Tag and Push Docker image
       run: |
         docker tag ecommerce-app:latest ${{ secrets.DOCKER_USERNAME }}/ecommerce-app:latest
-        docker push ${{ secrets.DOCKER_USERNAME }}/my-spring-boot-app:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/ecommerce-app:latest:latest
